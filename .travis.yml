@@ -8,6 +8,7 @@ cache:
 before_install:
   - npm install -g hexo-cli
   - mkdir public
+  - cd public
   - hexo init
 branches:
   only:
