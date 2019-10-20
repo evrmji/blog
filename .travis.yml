@@ -2,14 +2,17 @@ sudo: false
 language: node_js
 node_js:
   - 10 # use nodejs v10 LTS
-cache: npm
-install:
+cache:
+  directories:
+    - node_modules
+before_install:
   - npm install -g hexo-cli
 branches:
   only:
     - master # build master branch only
 script:
-  - hexo init # generate static files
+  - hexo clean
+  - hexo generate # generate static files
 deploy:
   provider: pages
   skip-cleanup: true
