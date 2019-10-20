@@ -4,7 +4,7 @@ node_js:
   - 10 # use nodejs v10 LTS
 cache: npm
 nstall:
-  - npm install
+  - npm install -g hexo-cli
 branches:
   only:
     - master # build master branch only
