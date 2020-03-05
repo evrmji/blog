@@ -2,6 +2,10 @@ sudo: disable
 language: node_js
 node_js:
   - 12
+cache:
+  npm: true
+  directories:
+    - node_modules
 
 before_install:
   - npm install -g hexo-cli
@@ -14,12 +18,13 @@ install:
   - cd $HOME/generate/themes/suka
   - git checkout canary
   - npm install --production
+  - npm ls --depth 0
 
   - cp $TRAVIS_BUILD_DIR/_site_config.yml $HOME/generate/_config.yml
   - cp $TRAVIS_BUILD_DIR/_theme_config.yml $HOME/generate/themes/_config.yml
 script:
   - cd $HOME/generate
-  - hexo generate  --debug
+  - hexo generate
 
 deploy:
   provider: pages
