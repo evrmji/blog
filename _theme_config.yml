@@ -1,8 +1,10 @@
 # ---------------------------------------------------------------
 # !!ATTENTION!!
 # ---------------------------------------------------------------
-# There are two config file in Hexo Project, one in the root directory of your Hexo Project and another in the theme directory.
-# For convenience of description, the former is referred to as the site config and the latter as the theme config.
+# There are two config file in Hexo Project, one in the root
+# directory of your Hexo Project and another in the theme directory.
+# For convenience of description, the former is referred to as the
+# site config and the latter as the theme config.
 #
 # There are some pivotal config in `site_config.yml` in Suka Theme directory.
 # You should copy them and paste them to the end of your site config file!
@@ -93,7 +95,7 @@ nav:
   archives:
     use: true
   rss:
-    use: false
+    use: ture
   share:
     use: true
   search:
@@ -139,7 +141,7 @@ post:
   #       license: 'This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>'
   # You can also use Front-Matter `license` to override this setting
   # or use Front-Matter `hide_license: true` to hide license on spefic post
-  license:
+  license: 'This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 4.0 Unported License</a>'
 
 # Table Of Contents which will be show on right side of the post
 toc:
