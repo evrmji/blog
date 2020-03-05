@@ -24,6 +24,9 @@ install:
 script:
   - cd $HOME/generate
   - hexo generate
+  - pwd
+  - ls
+  - ls public
 
 deploy:
   provider: pages
