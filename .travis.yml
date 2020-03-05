@@ -3,6 +3,7 @@ language: node_js
 node_js:
   - 12
 cache:
+  npm: true
   directories:
     - node_modules
 
@@ -16,7 +17,7 @@ install:
   - git clone https://github.com/SukkaW/hexo-theme-suka $HOME/generate/themes/suka
   - cd $HOME/generate/themes/suka
   - git checkout 1.4.0
-  - npm install --production
+  - npm install
 
   - cp $TRAVIS_BUILD_DIR/_site_config.yml $HOME/generate/_config.yml
   - cp $TRAVIS_BUILD_DIR/_theme_config.yml $HOME/generate/themes/_config.yml
