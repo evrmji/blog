@@ -1,7 +1,7 @@
 sudo: disable
 language: node_js
 node_js:
-  - 12 # use nodejs v12 LTS
+  - 12
 cache:
   directories:
     - node_modules
@@ -15,6 +15,7 @@ install:
 
   - git clone https://github.com/SukkaW/hexo-theme-suka $HOME/generate/themes/suka
   - cd $HOME/generate/themes/suka
+  - git checkout 1.4.0
   - npm install --production
 
   - cp $TRAVIS_BUILD_DIR/_site_config.yml $HOME/generate/_config.yml
