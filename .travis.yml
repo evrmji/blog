@@ -1,26 +1,33 @@
-sudo: false
-language: node_js
-node_js:
-  - 10 # use nodejs v10 LTS
-cache:
-  directories:
-    - node_modules
+sudo: enable
+
 before_install:
   - npm install -g hexo-cli
-  - mkdir public
-  - cd public
+  - mkdir $HOME/generate
+  - cd $HOME/generate
   - hexo init
-branches:
-  only:
-    - master # build master branch only
-script:
-  - hexo clean
-  - hexo generate # generate static files
+
+  - git clone https://github.com/evrmji/blog
+  - cp $HOME/blog/archive*/ $HOME/generate/source
+
+  - git clone https://github.com/SukkaW/hexo-theme-suka $HOME/generate/themes/suka
+  - (cd $HOME/generate/themes/suka && \
+     npm install --production)
+
+  - cp $HOME/blog/_site_config.yml $HOME/generate/_config.yml
+  - cp $HOME/blog/_theme_config.yml $HOME/generate/themes/_config.yml
+
+  - cd $HOME/generate
+  - hexo - generate
+
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: true
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
   on:
-    branch: gh-pages
-  local-dir: /
+    branch: master
+  local-dir: $HOME/generate/public
+  
+branches:
+  only:
+    - master
