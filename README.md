@@ -1,11 +1,9 @@
 # <div align="center"><a title="Go to homepage" href="evrmji.org"></a>blog</div>
 
 <p align="center">
-
-<a href="https://travis-ci.com/evrmji/blog"><img alt="Build Status" src="https://travis-ci.com/evrmji/blog.svg?branch=master"/></a>
-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Build Status" src="https://github.com/evrmji/blog/blob/master/LICENSES"/></a>
-<a href=""><img alt="Build Status" src="https://img.shields.io/static/v1?label=License(code)&message=MIT&color=red?style=flat-square"/></a>
-
+<a href="https://travis-ci.com/evrmji/blog"><img src="https://travis-ci.com/evrmji/blog.svg?branch=master"/></a>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/static/v1?label=License&message=CC%20BY-NC-SA%204.0&color=red&style=flat-square"/></a>
+<a href="https://github.com/evrmji/blog/blob/master/LICENSES"><img src="https://img.shields.io/static/v1?label=License(code)&message=MIT&style=flat-square"/></a>
 </p>
 
 ## Abstract 简介
