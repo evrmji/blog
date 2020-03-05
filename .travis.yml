@@ -8,9 +8,7 @@ cache:
 
 before_install:
   - npm install -g hexo-cli
-  - mkdir $HOME/generate
-  - cd $HOME/generate
-  - hexo init
+  - hexo init $HOME/generate
 install:
   - rm $HOME/generate/source/_posts/* -rf
   - find $TRAVIS_BUILD_DIR/*/ -name "*.md" | xargs -i cp -r {} $HOME/generate/source/_posts/

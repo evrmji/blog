@@ -95,7 +95,7 @@ nav:
   archives:
     use: true
   rss:
-    use: ture
+    use: true
   share:
     use: true
   search:
