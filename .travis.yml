@@ -16,7 +16,7 @@ install:
 
   - git clone https://github.com/SukkaW/hexo-theme-suka $HOME/generate/themes/suka
   - cd $HOME/generate/themes/suka
-  - git checkout 1.4.0
+  - git checkout canary
   - npm install
 
   - cp $TRAVIS_BUILD_DIR/_site_config.yml $HOME/generate/_config.yml
