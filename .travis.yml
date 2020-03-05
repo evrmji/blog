@@ -2,10 +2,6 @@ sudo: disable
 language: node_js
 node_js:
   - 12
-cache:
-  npm: true
-  directories:
-    - node_modules
 
 before_install:
   - npm install -g hexo-cli
