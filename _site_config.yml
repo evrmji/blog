@@ -3,6 +3,14 @@
 ## Themes: https://hexo.io/themes/
 theme: suka
 
+title: blog
+description: 
+keywords:
+author: aero
+timezone: Asia/Shanghai
+
+permalink: :year/:month/:title/
+
 # Suka Theme config
 # Documents: https://theme-suka.skk.moe/docs/
 suka_theme:
