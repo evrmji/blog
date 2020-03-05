@@ -13,7 +13,7 @@ before_install:
   - hexo init
 install:
   - rm $HOME/generate/source/* -rf
-  - cp $TRAVIS_BUILD_DIR/*/ $HOME/generate/source -r
+  - cp $TRAVIS_BUILD_DIR/*/ $HOME/generate/source/_posts -r
 
   - git clone https://github.com/SukkaW/hexo-theme-suka $HOME/generate/themes/suka
   - cd $HOME/generate/themes/suka
