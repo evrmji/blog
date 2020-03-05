@@ -1,4 +1,4 @@
-# <div align="center"><a title="Go to homepage" href="https://theme-suka.skk.moe"></a>u k a</div>
+# <div align="center"><a title="Go to homepage" href="evrmji.org"></a>blog</div>
 
 <p align="center">
 
@@ -13,7 +13,6 @@
 无
 
 ## 版权
-
 
 
 文本内容, 图片, 非代码文件, 以及非代码内容, 无特殊说明, 均以 CC BY-NC-SA 4.0 协议(保留署名-非商业使用-同方式共享)授权.
