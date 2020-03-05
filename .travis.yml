@@ -17,8 +17,8 @@ install:
   - rm $HOME/generate/source/_posts/* -rf
   - find $TRAVIS_BUILD_DIR/*/ -name "*.md" | xargs -i cp -r {} $HOME/generate/source/_posts/
 
-  - git clone https://github.com/SukkaW/hexo-theme-suka $HOME/generate/themes/suka
-  - cd $HOME/generate/themes/suka
+  - git clone https://github.com/forsigner/fexo $HOME/generate/themes/fexo
+  - cd $HOME/generate/themes/fexo
   - git checkout canary
   - npm install --production
   - npm ls --depth 0
