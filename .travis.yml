@@ -14,6 +14,10 @@ before_install:
 install:
   - rm $HOME/generate/source/_posts/* -rf
   - find $TRAVIS_BUILD_DIR/*/ -name "*.md" | xargs -i cp -r {} $HOME/generate/source/_posts/
+  - cd $HOME/generate/source/_posts/
+  - pwd
+  - ls
+  - ls public
 
   - git clone https://github.com/SukkaW/hexo-theme-suka $HOME/generate/themes/suka
   - cd $HOME/generate/themes/suka
@@ -24,9 +28,6 @@ install:
 script:
   - cd $HOME/generate
   - hexo generate
-  - pwd
-  - ls
-  - ls public
 
 deploy:
   provider: pages
