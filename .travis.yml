@@ -19,7 +19,6 @@ install:
 
   - git clone https://github.com/forsigner/fexo $HOME/generate/themes/fexo
   - cd $HOME/generate/themes/fexo
-  - git checkout canary
   - npm install --production
   - npm ls --depth 0
 
