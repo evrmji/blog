@@ -15,8 +15,8 @@ before_install:
   - cp $TRAVIS_BUILD_DIR/archive*/ $HOME/generate/source -r
 
   - git clone https://github.com/SukkaW/hexo-theme-suka $HOME/generate/themes/suka
-  - (cd $HOME/generate/themes/suka && \
-     npm install --production)
+  - cd $HOME/generate/themes/suka
+  - npm install --production
 
   - cp $HOME/blog/_site_config.yml $HOME/generate/_config.yml
   - cp $HOME/blog/_theme_config.yml $HOME/generate/themes/_config.yml
