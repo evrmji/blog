@@ -11,7 +11,7 @@ before_install:
   - mkdir $HOME/generate
   - cd $HOME/generate
   - hexo init
-
+install:
   - cp $TRAVIS_BUILD_DIR/archive*/ $HOME/generate/source -r
 
   - git clone https://github.com/SukkaW/hexo-theme-suka $HOME/generate/themes/suka
@@ -20,7 +20,7 @@ before_install:
 
   - cp $TRAVIS_BUILD_DIR/_site_config.yml $HOME/generate/_config.yml
   - cp $TRAVIS_BUILD_DIR/_theme_config.yml $HOME/generate/themes/_config.yml
-
+script:
   - cd $HOME/generate
   - hexo generate
 
@@ -31,7 +31,8 @@ deploy:
   keep_history: true
   on:
     branch: master
-  local-dir: $HOME/generate/public
+  local-dir: /
+  target_branch: gh-pages
   
 branches:
   only:
