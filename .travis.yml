@@ -22,7 +22,7 @@ before_install:
   - cp $TRAVIS_BUILD_DIR/_theme_config.yml $HOME/generate/themes/_config.yml
 
   - cd $HOME/generate
-  - hexo - generate
+  - hexo generate
 
 deploy:
   provider: pages
