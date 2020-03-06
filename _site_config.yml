@@ -9,7 +9,6 @@ description: 记录点东西
 timezone: Asia/Shanghai
 
 # URL
-url: evrmji.org
 permalink: :year/:title/
 
 
