@@ -9,7 +9,10 @@ description: 记录点东西
 timezone: Asia/Shanghai
 
 # URL
+url: evrmji.org
 permalink: :year/:title/
+
+
 theme: suka
 # Suka Theme config
 # Documents: https://theme-suka.skk.moe/docs/
@@ -17,7 +20,7 @@ suka_theme:
   search:
     enable: true
     path: search.json
-    field: All # Page | Post | All. Default post
+    field: all # Page | Post | All. Default post
   prism:
     enable: true
     line_number: true
