@@ -17,7 +17,7 @@ install:
   - find $TRAVIS_BUILD_DIR/20*/ -name "*.md" | xargs -i cp -r {} $HOME/generate/source/_posts/
   - find $TRAVIS_BUILD_DIR/source/ -name "*.md" | xargs -i cp -r {} $HOME/generate/source/
   # Init theme
-  - git clone https://github.com/SukkaW/hexo-theme-suka $HOME/generate/themes/suka
+  - git clone https://github.com/evrmji/hexo-theme-suka $HOME/generate/themes/suka
   - cd $HOME/generate/themes/suka
   - npm install
   # Copy config files
