@@ -1,3 +1,4 @@
+# https://github.com/evrmji/blog/.travis.yml
 sudo: disable
 language: node_js
 node_js:
@@ -8,27 +9,26 @@ cache:
     - node_modules
 
 before_install:
-  - node -v
-  - npm -v
   - npm install -g hexo-cli
   - hexo init $HOME/generate
-  - hexo -v
 install:
+  # Copy posts
   - rm $HOME/generate/source/_posts/* -rf
   - find $TRAVIS_BUILD_DIR/*/ -name "*.md" | xargs -i cp -r {} $HOME/generate/source/_posts/
-
+  # Init theme
   - git clone https://github.com/SukkaW/hexo-theme-suka $HOME/generate/themes/suka
   - cd $HOME/generate/themes/suka
-  - npm install --production
-  - npm ls --depth 0
-
+  - npm install
+  # Copy config files
   - cp $TRAVIS_BUILD_DIR/_site_config.yml $HOME/generate/_config.yml
   - cp $TRAVIS_BUILD_DIR/_theme_config.yml $HOME/generate/themes/suka/_config.yml
 script:
   - cd $HOME/generate
-  - hexo generate --debug
-
-
+  - hexo generate
+  # Copy other files
+  - find $TRAVIS_BUILD_DIR/source/img/ -name "*" | xargs -i cp -r {} $HOME/generate/public/img/
+  - mkdir $HOME/generate/public/files/
+  - find $TRAVIS_BUILD_DIR/source/files/ -name "*" | xargs -i cp -r {} $HOME/generate/public/files/
   - cp -r $TRAVIS_BUILD_DIR/source/CNAME $HOME/generate/public/CNAME
 
 deploy:
