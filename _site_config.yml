@@ -3,12 +3,16 @@
 ## Themes: https://hexo.io/themes/
 
 # Website
-title: blog
+title: aero
 keywords: 计算机科学, 算法
 description: 记录点东西
+author: aero (evrmji)
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
+url: https://evrmji.org
+root: /
 permalink: :year/:title/
 
 
