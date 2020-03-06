@@ -28,10 +28,7 @@ script:
   - cd $HOME/generate
   - hexo generate --debug
 
-  - find $TRAVIS_BUILD_DIR/source/img/ -name "*" | xargs -i cp -r {} $HOME/generate/public/img/
-  - mkdir $HOME/generate/public/files/
-  - find $TRAVIS_BUILD_DIR/source/files/ -name "*" | xargs -i cp -r {} $HOME/generate/public/files/
-  - cp -r $TRAVIS_BUILD_DIR/source/CNAME $HOME/generate/public/source/_posts/
+
 
 deploy:
   provider: pages
