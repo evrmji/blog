@@ -28,7 +28,7 @@ head:
     # 192x192 png
     large: /img/favicon-192x192.png
     # svg icon
-    safari_pinned_tab: /img/favicon.svg
+    safari_pinned_tab: /img/favicon-512x512.png
   # Color
   #   It will defined color below:
   #     Android Chrome Color
@@ -65,7 +65,7 @@ footer:
   # Another example, you can setup 'Hosted on Coding Pages' as:
   #   custom_text: 'Hosted on <a href="https://pages.coding.me" rel="nofollow noopener noreferrer">Coding Pages</a>'
   # Muilt line footer text is supported.
-  custom_text:
+  custom_text: '<a href="/rss.xml">rss</a>, <a href="/archive/">archive</a>, <a href="/links.html">links</a>, <a href="/tags.html">tags</a>'
 
 # ---------------------------------------------------------------
 # Customize Settings
@@ -89,15 +89,15 @@ img:
 # Used to choose which
 nav:
   home:
-    use: true
+    use: false
   archives:
-    use: true
+    use: false
   rss:
-    use: true
+    use: false
   share:
     use: false
   search:
-    use: true
+    use: false
     link: /search
   pages:
     #About:
