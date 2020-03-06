@@ -34,6 +34,7 @@
 ## Copyrights 版权
 
 文本内容, 图片, 非代码文件, 以及非代码内容, 无特殊说明, 均以 [CC BY-NC-SA 4.0][CBNS] 协议(保留署名-非商业使用-同方式共享)授权.
+
 [CBNS]: https://creativecommons.org/licenses/by-nc-sa/4.0/ 
 
 代码片段, 含文件内嵌代码片段, 均采用 MIT 许可证授权.
