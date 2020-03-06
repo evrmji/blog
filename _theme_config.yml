@@ -80,7 +80,7 @@ uiux:
   bg_color:
 
 img:
-  avatar: h/img/avatar.png
+  avatar: /img/avatar.png
 
 # ---------------------------------------------------------------
 # Menu Settings
