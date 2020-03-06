@@ -37,5 +37,6 @@ math:
 
   # KaTeX config
   katex:
+    enable: true
     css: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css
     js: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js # not used
