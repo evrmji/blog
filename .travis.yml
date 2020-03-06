@@ -27,8 +27,8 @@ script:
   - cd $HOME/generate
   - hexo generate
   # Copy other files
-  - cp -r $TRAVIS_BUILD_DIR/source/img/ $HOME/generate/public/img/
-  - cp -r $TRAVIS_BUILD_DIR/source/files/ $HOME/generate/public/files/
+  - cp -r $TRAVIS_BUILD_DIR/source/img/ $HOME/generate/public/
+  - cp -r $TRAVIS_BUILD_DIR/source/files/ $HOME/generate/public/
   - cp -r $TRAVIS_BUILD_DIR/source/CNAME $HOME/generate/public/CNAME
 
 deploy:
