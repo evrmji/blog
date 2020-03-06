@@ -68,13 +68,13 @@ footer:
     # Hexo link (Powered by Hexo).
     enable: true
     # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
+    version: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
     enable: true
     # Version info of NexT after scheme info (vX.X.X).
-    version: true
+    version: false
 
   # Beian ICP and gongan information for Chinese users. See: http://www.beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
@@ -95,8 +95,8 @@ footer:
 creative_commons:
   license: by-nc-sa
   sidebar: false
-  post: false
-  language:
+  post: true
+  language: deed.zh
 
 
 # ---------------------------------------------------------------
@@ -145,8 +145,8 @@ menu_settings:
 
 sidebar:
   # Sidebar Position.
-  position: left
-  #position: right
+  #position: left
+  position: right
 
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
@@ -184,8 +184,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+  GitHub: https://github.com/evrmji || github
+  E-Mail: mailto:ac@evrmji.org || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -205,7 +205,7 @@ links_settings:
   icon: link
   title: Links
   # Available values: block | inline
-  layout: block
+  layout: inline
 
 links:
   #Title: http://yoursite.com
@@ -376,7 +376,7 @@ codeblock:
     style:
 
 back2top:
-  enable: true
+  enable: false
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
@@ -402,8 +402,8 @@ bookmark:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: false
-  permalink: https://github.com/yourname
-  title: Follow me on GitHub
+  permalink: https://github.com/evrmji
+  title: GitHub
 
 
 # ---------------------------------------------------------------
@@ -525,13 +525,13 @@ math:
 
   # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.
   katex:
-    enable: false
+    enable: true
     # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
-    copy_tex: false
+    copy_tex: true
 
 # Easily enable fast Ajax navigation on your website.
 # Dependencies: https://github.com/theme-next/theme-next-pjax
-pjax: false
+pjax: true
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox
@@ -544,7 +544,7 @@ mediumzoom: false
 
 # Vanilla JavaScript plugin for lazyloading images.
 # For more information: https://github.com/ApoorvSaxena/lozad.js
-lazyload: false
+lazyload: true
 
 # Pangu Support
 # For more information: https://github.com/vinta/pangu.js
@@ -823,7 +823,7 @@ tabs:
 # So, you must install the dependency of pdf.js if you want to use pdf tag and make it available to all browsers.
 # See: https://github.com/theme-next/theme-next-pdf
 pdf:
-  enable: false
+  enable: true
   # Default height
   height: 500px
 
