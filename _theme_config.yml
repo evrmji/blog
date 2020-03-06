@@ -72,7 +72,7 @@ footer:
 # ---------------------------------------------------------------
 uiux:
   # Muilt line slogan is supported.
-  slogan: Hi, nice to meet you.
+  slogan: 魔法, 构式, 术式, 咒术.
   # For most link color except post color
   link_color:
   primary_color:
@@ -93,9 +93,9 @@ nav:
   archives:
     use: true
   rss:
-    use: false
-  share:
     use: true
+  share:
+    use: false
   search:
     use: true
     link: /search
