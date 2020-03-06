@@ -15,6 +15,8 @@
 
 <!-- busuanzi -->
 
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
 
 <!-- comment -->
 
@@ -26,14 +28,29 @@
 
 <!-- analytics -->
 
+    <link rel="dns-prefetch" href="//hm.baidu.com">
 
 
 
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
 
+
+    <link rel="dns-prefetch" href="//s95.cnzz.com">
+
+
+
+    <link rel="dns-prefetch" href="//pingjs.qq.com">
 
 
     <!-- ## Preload ## -->
     
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@2.3/bsz.pure.mini.js" as="script">
+
+
+
 
 
 
@@ -44,7 +61,7 @@
     <meta name="renderer" content="webkit">
 
     <!-- Title -->
-    <title>Hexo</title>
+    <title>blog</title>
 
     <!-- Favicons -->
     
@@ -115,9 +132,13 @@
         background: #f8f9fa;
         opacity: .85;
     }
-</style><link rel="stylesheet" href="/css/style.min.css">
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/css/style.min.css">
 
 
+
+
+    <!-- prism.css -->
+    
 
 
 
@@ -139,10 +160,10 @@
     
 
 
-    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Hexo"><meta name="msapplication-starturl" content="http://yoursite.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="blog"><meta name="msapplication-starturl" content="http://yoursite.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="blog"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="Hexo"><meta property="og:site_name" content="Hexo"><meta property="og:type" content="website"><meta property="og:url" content="http://yoursite.com/"><meta property="og:locale" content="en"><meta name="description" content="John Doe - Hexo">
+    <meta property="og:title" content="blog"><meta property="og:site_name" content="blog"><meta property="og:type" content="website"><meta property="og:url" content="http://yoursite.com/"><meta property="og:locale" content="en"><meta name="description" content="记录点东西 - John Doe - blog"><meta name="keywords" content="计算机科学, 算法">
 
     
 
@@ -154,9 +175,45 @@
     <!-- ### Analytics ### -->
     
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112763360-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-112763360-1');
+</script>
 
 
 
+    <script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?ee96f287199df59d77ebfbbc4ee942f4';
+    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+    <div hidden>
+    <script src="//s95.cnzz.com/z_stat.php?id=1278661903&web_id=1278661903" language="JavaScript"></script>
+</div>
+
+
+
+    <script>
+    var _mtac = {};
+    (function() {
+        var mta = document.createElement("script");
+        mta.src = "https://pingjs.qq.com/h5/stats.js?v2.0.4";
+        mta.setAttribute("name", "MTAH5");
+        mta.setAttribute("sid", "theme.analytics.tencent_mta_id");
+
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(mta, s);
+    })();
+</script>
 
 
 
@@ -177,7 +234,7 @@
     },
     "publisher": {
         "@type": "Organization",
-        "name": "Hexo",
+        "name": "blog",
         "logo": {
             "@type": "ImageObject",
             "url": "https://theme-suka.skk.moe/demo/img/suka-favicon.png"
@@ -200,8 +257,8 @@
         "query-input": "required name=search_term_string"
     },
     
-    "keywords": "",
-    "description": "John Doe - Hexo"
+    "keywords": "计算机科学, 算法",
+    "description": "记录点东西 - John Doe - blog"
 }
 </script>
 
@@ -219,7 +276,7 @@
             <!-- ### Main content ### -->
             <!-- ## Header ##-->
 <header>
-    <h1 class="header-title text-center"><a href="/">Hexo</a></h1>
+    <h1 class="header-title text-center"><a href="/">blog</a></h1>
 
     <p class="text-center header-slogan">
         
@@ -248,14 +305,14 @@
         <!-- Share Weibo -->
         
         <li class="menu-item">
-            <a href="http://service.weibo.com/share/share.php?appkey=&title=Hexo&url=http://yoursite.com&pic=https://theme-suka.skk.moe/demo/img/suka-favicon.png&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=blog&url=http://yoursite.com&pic=https://theme-suka.skk.moe/demo/img/suka-favicon.png&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
         </li>
         
 
         <!-- Share Twitter -->
         
         <li class="menu-item">
-            <a href="https://twitter.com/intent/tweet?text=Hexo&url=http://yoursite.com&via=John Doe" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+            <a href="https://twitter.com/intent/tweet?text=blog&url=http://yoursite.com&via=John Doe" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
         </li>
         
 
@@ -276,28 +333,28 @@
         <!-- Share LinkedIn -->
         
         <li class="menu-item">
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com&title=" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com&title=links" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
         </li>
         
 
         <!-- Share QQ -->
         
         <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Hexo&title=&summary=&pics=https://theme-suka.skk.moe/demo/img/suka-favicon.png&url=http://yoursite.com" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=blog&title=links&summary=记录点东西&pics=https://theme-suka.skk.moe/demo/img/suka-favicon.png&url=http://yoursite.com" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
         </li>
         
 
         <!-- Share Telegram -->
         
         <li class="menu-item">
-            <a href="https://t.me/share/url?url=http://yoursite.com&text=" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+            <a href="https://t.me/share/url?url=http://yoursite.com&text=links" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
         </li>
         
 
         <!-- QRCode -->
         
         <li class="menu-item">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAB0CAAAAABx8Un7AAABLklEQVR42u3ZwbLCMAiF4bz/S+u2dsLJIW2hzvzZePV28i1ECGR8GtYABQXdQodY5///bCCem+0DWotOv/Tjw8Hfx/fWPqCl6Cww1ObqNdoH9B2okwBA/xfNPA/aj0aJOgooldgvVxnQy6j7o3cT/S2nQdBtdNn0LJLEI10b6CVUHcCmwWAW91RGAr0VPScJuyAnPwftRRXsDj+mhR60BY2CIkoIKhjtQAK9FV0lfGfD1XAStB6NDtBu0rCHl6AlqHu4zjZbVsIHfRTNXCBkhpag9ajTCDmFXTVRoLWoO+hwD9VyaAlagu5exDvDaNA+1Amg1ZDZCjLQUtS9tM0UiWXXBtqCqkTuNMmg70StyztR0EF7UCfh71zcgvagzvDCHXbJoTVoCVq5QEFBU+sL0YSSIugE1CwAAAAASUVORK5CYII=" alr="QRCode">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABj0lEQVR42u3aQRLCIBBE0dz/0rqP0N2kNGmsn42WJuQtpphh4HgVXAcIECC2QBzi+njo9Nv5vvN3Ny6IXsQwaAaDK9wIaMcFUY04B87oxbP/Z0GrxgXxP4hZUCociP9DuBcnExyI/RCzRDOarEZFyk+zKIjbEcngVz6/Vm2DuBVhF62jh0cTz6QI/sqqHMStCBVI6UtVMSQX2CAqEbbwWGyEjH63CQxEJSKdpFxDzQWjDEwQFQgVeMmLHVKODaIakTbP1X2ueRZtuoCoQCSN0tmE5CY21XQB0YlQSUgFYFK02CQJohIxCzKVfNT/rjAGsQfCBd/KIjgtaEB0I9KDGypJJVfcYAfxOCKZkOziViyG4kIXRBXCJa7k8IZrqtgEBqIKkRQn6Uaua7CC6EakG3HuYIZrooDYBxFtrC8c5HDgqNAF8TgiPdjjmqwrTVkQ/Yio+Rk2UC4vfkBsg0iDz238L50kAbEFIi5W0oOjIKoR6cGMpDCOm60gahHLC9kwmC832EE8injyAgECRDXiDWXpuXkFuflyAAAAAElFTkSuQmCC" alr="QRCode">
         </li>
         
 
@@ -320,7 +377,74 @@
             
                 <div class="column col-12">
                     
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/03/05/hello/" rel="bookmark">Hello, world!</a></h2>
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/links/" rel="bookmark">links</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        友链空
+
+    <a href="/2020/links/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null" src="/img/suka-lazyload.gif" alt="John Doe's Avatar">
+        <time>2020-03-06</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/tages/" rel="bookmark">tags</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+    <a href="/2020/tages/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null" src="/img/suka-lazyload.gif" alt="John Doe's Avatar">
+        <time>2020-03-06</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/hello/" rel="bookmark">Hello, world!</a></h2>
 
 
 <p class="mb-0 card-body">
@@ -328,7 +452,7 @@
         Hello, world!Hello, world!
 中文测试
 苟利国家生死以, 岂因福祸避趋之.
-    <a href="/2020/03/05/hello/">Read more</a>
+    <a href="/2020/hello/">Read more</a>
 </p>
 
 
@@ -361,7 +485,7 @@
     <!-- footer copyright -->
     
         <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
-            <a class="footer-copyright-a" href="http://yoursite.com">Hexo</a>
+            <a class="footer-copyright-a" href="http://yoursite.com">blog</a>
         </p>
 
     <!-- footer custom text -->
@@ -371,6 +495,18 @@
     <!-- footer develop info -->
     <p class="footer-develop mb-0">
         
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
 
         
         Powered by&nbsp;<!--
@@ -395,7 +531,12 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c 
 
 </script>
 
-<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@8.9.0" async></script>
+    <script src="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@2.3/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
 
 
 
