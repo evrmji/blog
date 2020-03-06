@@ -28,3 +28,14 @@ suka_theme:
     enable: true
     line_number: true
     theme: default
+
+math:
+  engine: 'katex' # or 'mathjax'
+  # MathJax config
+  mathjax:
+    src: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js
+
+  # KaTeX config
+  katex:
+    css: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css
+    js: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js # not used
