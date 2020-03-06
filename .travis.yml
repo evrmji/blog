@@ -19,7 +19,7 @@ install:
   # Init theme
   - git clone https://github.com/evrmji/hexo-theme-suka $HOME/generate/themes/suka
   - cd $HOME/generate/themes/suka
-  - npm install
+  - npm install --production
   # Add support of KaTex
   - npm install hexo-math --save
   # Copy config files
