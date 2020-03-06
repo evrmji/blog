@@ -91,21 +91,17 @@ print(quick_sort([0, 1, 3, 11, 4, 2, 0, 1]))
    - 二级无序
    - 二级无序 2
 
-
-
 TODO List
 
 - [ ] TODO List
 
 - [ ] TODO List2
 
-
-
 然后来测试图片
 ![GitHub](https://www.jsdelivr.com/img/landing/github.png "GitHub")
 
 超链接
-[超链接](// "title")
+[超链接](https://www.jsdelivr.com "title")
 
 第二种图片链接测试
 ![GitHub][1]
