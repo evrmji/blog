@@ -1,4 +1,4 @@
-# <div align="center"><a title="Go to homepage" href="evrmji.org"></a>blog</div>
+# <div align="center"><a title="Go to homepage" href="evrmji.org"></a>aero</div>
 
 <p align="center">
 <a href="https://travis-ci.com/evrmji/blog"><img src="https://travis-ci.com/evrmji/blog.svg?branch=master"/></a>
