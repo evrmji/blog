@@ -23,10 +23,15 @@ install:
   - npm ls --depth 0
 
   - cp $TRAVIS_BUILD_DIR/_site_config.yml $HOME/generate/_config.yml
-  - cp $TRAVIS_BUILD_DIR/_theme_config.yml $HOME/generate/themes/_config.yml
+  - cp $TRAVIS_BUILD_DIR/_theme_config.yml $HOME/generate/themes/suka/_config.yml
 script:
   - cd $HOME/generate
   - hexo generate --debug
+
+  - find $TRAVIS_BUILD_DIR/source/img/ -name "*" | xargs -i cp -r {} $HOME/generate/public/img/
+  - mkdir $HOME/generate/public/files/
+  - find $TRAVIS_BUILD_DIR/source/files/ -name "*" | xargs -i cp -r {} $HOME/generate/public/files/
+  - cp -r $TRAVIS_BUILD_DIR/source/CNAME $HOME/generate/public/source/_posts/
 
 deploy:
   provider: pages
