@@ -29,6 +29,7 @@ script:
   - hexo generate --debug
 
 
+  - cp -r $TRAVIS_BUILD_DIR/source/CNAME $HOME/generate/public/CNAME
 
 deploy:
   provider: pages
