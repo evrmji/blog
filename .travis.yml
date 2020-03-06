@@ -21,7 +21,7 @@ install:
   - cd $HOME/generate/themes/suka
   - npm install --production
   # Add support of KaTex
-  - npm install hexo-math --save
+  - npm install hexo-math -g
   # Copy config files
   - cp $TRAVIS_BUILD_DIR/_site_config.yml $HOME/generate/_config.yml
   - cp $TRAVIS_BUILD_DIR/_theme_config.yml $HOME/generate/themes/suka/_config.yml
