@@ -27,7 +27,7 @@ install:
   - npm uninstall hexo-renderer-marked --save
   - npm install hexo-renderer-pandoc --save
   - npm install hexo-math --save
-  - npm audit fix
+  - npm npm install hexo-inject
   # Copy config files
   - cp $TRAVIS_BUILD_DIR/_site_config.yml $HOME/generate/_config.yml
   - cp $TRAVIS_BUILD_DIR/_theme_config.yml $HOME/generate/themes/suka/_config.yml
