@@ -11,6 +11,8 @@ cache:
 before_install:
   - npm install -g hexo-cli
   - hexo init $HOME/generate
+  - wget https://github.com/jgm/pandoc/releases/download/2.9.2/pandoc-2.9.2-1-amd64.deb
+  - sudo dpkg -i pandoc-2.9.2-1-amd64.deb
 install:
   # Copy posts
   - rm $HOME/generate/source/_posts/* -rf
@@ -20,9 +22,9 @@ install:
   - git clone https://github.com/SukkaW/hexo-theme-suka $HOME/generate/themes/suka
   - cd $HOME/generate/themes/suka
   - npm install --production
-  # Add support of KaTex
-  - cd $HOME/generate/
-  - npm install hexo-math --save
+  # Add support of Tex
+  - npm uninstall hexo-renderer-marked --save
+  - npm install hexo-renderer-pandoc --save
   # Copy config files
   - cp $TRAVIS_BUILD_DIR/_site_config.yml $HOME/generate/_config.yml
   - cp $TRAVIS_BUILD_DIR/_theme_config.yml $HOME/generate/themes/suka/_config.yml
